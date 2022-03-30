@@ -5,3 +5,7 @@ CREATE TABLE House (
     Distance FLOAT,
     ReviewId BIGINT FOREIGN KEY (ReviewId) REFERENCES Review(ReviewId)
 );
+
+INSERT INTO House
+VALUES (125000.99, '2520 Iris Ct', 122, 12345678),
+(250455.88, '8800 W Bluemound Rd', 267, 12345612)
