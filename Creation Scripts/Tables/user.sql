@@ -6,7 +6,7 @@ CREATE TABLE Users (
     HouseId BIGINT FOREIGN KEY (HouseId) REFERENCES House(HouseId)
 );
 
-INSERT INTO User
+INSERT INTO Users
 VALUES ('Administrator', 'Admin', 'asdcvasdqwe123', 1),
 ('DTC101', 'Dylan Chirigotis', 'lovingTheBestest456', 1),
 ('AK4422', 'Anna Kuether', 'asdfblmasfj08123', 2)
