@@ -26,13 +26,3 @@ WHERE h.Price > (
     SELECT AVG(h1.Price)
     FROM House h1
 )
-
-SELECT *
-FROM House h
-INNER JOIN Review r on r.ReviewId = h.ReviewId
-
-SELECT h.Price, h.HouseLocation, r.NameOfUser
-FROM House h
-INNER JOIN Review r on r.ReviewId = h.ReviewId
-GROUP BY (r.NameOfUser), h.HouseLocation, h.Price
-ORDER BY (r.NameOfUser), h.HouseLocation, h.Price
