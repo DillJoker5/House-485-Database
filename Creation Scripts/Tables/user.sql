@@ -7,6 +7,6 @@ CREATE TABLE Users (
 );
 
 INSERT INTO User
-VALUES ('Administrator', 'Admin', 'asdcvasdqwe123', 12345678),
-('DTC101', 'Dylan Chirigotis', 'lovingTheBestest456', 12345678),
-('AK4422', 'Anna Kuether', 'asdfblmasfj08123', 12345612)
+VALUES ('Administrator', 'Admin', 'asdcvasdqwe123', 1),
+('DTC101', 'Dylan Chirigotis', 'lovingTheBestest456', 1),
+('AK4422', 'Anna Kuether', 'asdfblmasfj08123', 2)
