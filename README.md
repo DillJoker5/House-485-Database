@@ -12,4 +12,9 @@ UserId -- Bigint -- Primary Key <br>
 Username -- Varchar of 100 -- Not NULL <br>
 Name -- Varchar of 100 -- Not NULL <br>
 Password -- Varchar of 100 -- Not NULL <br>
-HouseId -- Bigint -- Foreign Key to HouseId of House
+HouseId -- Bigint -- Foreign Key to HouseId of House <br>
+## Session
+SessionId -- Bigint -- Primary Key <br>
+UserId -- Bigint -- Foreign Key to UserId of Users <br>
+UserGuid -- Varchar of 100 <br>
+IsActive -- Bit
