@@ -1,7 +1,7 @@
 SELECT *
 FROM House
 
-SELECT Price, HouseLocation, Distance
+SELECT Price, HouseLocation, Distance, UserId
 FROM House
 
 SELECT *
@@ -26,3 +26,13 @@ WHERE h.Price > (
     SELECT AVG(h1.Price)
     FROM House h1
 )
+
+SELECT *
+FROM House h
+INNER JOIN Users u on u.UserId = h.UserId
+
+SELECT u.Username, u.Name, h.HouseLocation
+FROM House h
+INNER JOIN Users u on u.UserId = h.UserId
+GROUP BY (u.Username), u.Name, h.HouseLocation
+ORDER BY (u.Username), u.Name, h.HouseLocation

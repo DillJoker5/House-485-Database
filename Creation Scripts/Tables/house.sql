@@ -3,8 +3,9 @@ CREATE TABLE House (
     Price FLOAT NOT NULL,
     HouseLocation VARCHAR(200) NOT NULL,
     Distance FLOAT,
+    UserId BIGINT FOREIGN KEY (UserId) REFERENCES Users(UserId)
 );
 
 INSERT INTO House
-VALUES (125000.99, '2520 Iris Ct', 122),
-(250455.88, '8800 W Bluemound Rd', 267)
+VALUES (125000.99, '2520 Iris Ct', 122, 2),
+(250455.88, '8800 W Bluemound Rd', 267, 1)

@@ -30,13 +30,3 @@ WHERE u.Username NOT IN (
     FROM Users u1
     WHERE u1.Username = 'Administrator'
 )
-
-SELECT *
-FROM Users u
-INNER JOIN House h on h.HouseId = u.HouseId
-
-SELECT u.Username, u.Name, h.HouseLocation
-FROM Users u
-INNER JOIN House h on h.HouseId = u.HouseId
-GROUP BY (u.Username), u.Name, h.HouseLocation
-ORDER BY (u.Username), u.Name, h.HouseLocation
