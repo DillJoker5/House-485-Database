@@ -7,8 +7,7 @@ This repository holds all of the database scripts for the [House-485-Website](ht
 # Installation
 You will need to install the following things before running this project:
 * Please note that you will need to install and run both the [House-485-Website](https://github.com/DillJoker5/House-485-Website) and [House-485-Backend](https://github.com/DillJoker5/House-485-Backend) to fully use this database. Please see those installation guides for how to install them.
-* Windows only: SQL Server
-* Mac and Linux: ARM Docker Image
+* SQL Server or any relational database management system
 * Your preferred code editor for SQL
 
 # Running
@@ -17,8 +16,7 @@ You will need to install the following things before running this project:
 * Run the create database script
 * Run all of the creation scripts
 * Optional: Run all of the test scripts to verify everything is working correctly
-* Windows only: Create a login in SQL Server
-* Mac and Linux only: Create a login with azure sql edge
+* Follow standard connection string protocol for creating a login.
 * All of the user's information for Windows, Mac, or Linux can be found [here](https://github.com/DillJoker5/House-485-Backend)
 * Run Database locally (Will automatically be running on Windows)
 
